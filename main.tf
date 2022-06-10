@@ -22,6 +22,7 @@ resource "aws_route" "route"{
 #       value = data.aws_availability_zones.availableAZ.names
 #}
 
+
 resource "aws_subnet" "main" {
 #       count = length(data.aws_availability_zones.availableAZ.names)
         vpc_id = aws_vpc.vpc.id
